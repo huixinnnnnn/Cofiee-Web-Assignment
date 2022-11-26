@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>COFIEE  </title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="cofiee" name="keywords">
+    <meta content="cofiee" name="description">
+    <link href="C:\Users\User\OneDrive - Sunway Education Group\Desktop\web\coffeeicon.lnk" rel="icon">
+    <link href="css/style.css" rel="stylesheet">
+    <script defer src="js/reservation.js"></script>
+        
+</head>
+
+<body>
+    <div class="container-fluid p-0 nav-bar">
+        <nav class="navbar navbar-expand-lg bg-none navbar-dark py-3">
+            <a href="index.html" class="navbar-brand px-lg-4 m-0">
+                <h1 class="m-0 display-4 text-uppercase text-white">COFIEE</h1>
+            </a>
+                <div class="navbar-nav ml-auto p-4">
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="login.html" class="nav-item nav-link">Login</a>
+                    <a href="about.html" class="nav-item nav-link">About</a>
+                    <a href="service.html" class="nav-item nav-link">Service</a>
+                    <a href="cart.html" class="nav-item nav-link">Cart</a>
+                    <a href="menu.html" class="nav-item nav-link">Menu</a>
+                    <a href="reservation.html" class="nav-item nav-link">Reservation</a>
+                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container-fluid page-header mb-5 position-relative overlay-bottom">
+        <div class="d-flex flex-column align-items-center justify-content-center pt-0 pt-lg-5" style="min-height: 400px">
+            <h1 class="display-4 mb-3 mt-0 mt-lg-5 text-white text-uppercase">Reservation</h1>
+            <div class="d-inline-flex mb-lg-5">
+                <p class="m-0 text-white"><a class="text-white" href="index.html">Home</a></p>
+                <p class="m-0 text-white px-2">/</p>
+                <p class="m-0 text-white">Reservation</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid my-5">
+        <div class="container">
+            <div class="reservation position-relative overlay-top overlay-bottom">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 my-5 my-lg-0">
+                        <div class="p-5">
+                            <div class="mb-4">
+                                <h1 class="display-3 text-primary">15% OFF</h1>
+                                <h1 class="text-white">For Online Reservation</h1>
+                            </div>
+                            <p class="text-white">Fill in the booking form now...</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="text-center p-5" style="background: rgba(51, 33, 29, .8);">
+                            <h1 class="text-white mb-4 mt-5">Book Your Table</h1>
+                            <form class="mb-5">
+                                <div class="form-group">
+                                    <input type="text" id=name4 class="form-control bg-transparent border-primary p-4" placeholder="Name"
+                                        required="required" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" id=email4 class="form-control bg-transparent border-primary p-4" placeholder="Email"
+                                        required="required" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" id=date4 class="form-control bg-transparent border-primary p-4" placeholder="Date"
+                                        required="required" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" id=time4 class="form-control bg-transparent border-primary p-4" placeholder="Time"
+                                        required="required" />
+                                </div>
+                                <div class="form-group">
+                                    <select class="custom-select bg-transparent border-primary px-4" id =person4 style="height: 49px;">
+                                        <option selected>Person</option>
+                                        <option value="1">Person 1</option>
+                                        <option value="2">Person 2</option>
+                                        <option value="3">Person 3</option>
+                                        <option value="3">Person 4</option>
+                                        <option value="3">Person 5</option>
+                                        <option value="3">Person 6</option>
+                                    </select>
+                                </div>
+                                
+                                <div>
+                                    <button class="btn btn-primary btn-block font-weight-bold py-3" type="submit" onclick="reservation()">Book Now</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid footer text-white mt-5 pt-5 px-0 position-relative overlay-top">
+        <div class="row mx-0 pt-5 px-sm-3 px-lg-5 mt-4">
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">Get In Touch</h4>
+                <p><i class="fa fa-map-marker-alt mr-2"></i>Coffee Street, Selangor, Malaysia</p>
+                <p><i class="fa fa-phone-alt mr-2"></i>+012 345 67890</p>
+                <p class="m-0"><i class="fa fa-envelope mr-2"></i>hx@gmail.com</p>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">Follow Us</h4>
+                <p>Follow us on these social platform</p>
+                <div class="d-flex justify-content-start">
+                    <a class="btn btn-lg  btn-lg-square mr-2" href="#"><img src="img/instagram.png"></i></a>
+                    <a class="btn btn-lg  btn-lg-square mr-2" href="#"><img src="img/facebook.png"></i></a>
+                    <a class="btn btn-lg  btn-lg-square mr-2" href="#"><img src="img/twitter.png"></i></a>
+                    <a class="btn btn-lg  btn-lg-square mr-2" href="#"><img src="img/youtube.png"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">Open Hours</h4>
+                <div>
+                    <h6 class="text-white text-uppercase">Monday - Friday</h6>
+                    <p>8.00 AM - 8.00 PM</p>
+                    <h6 class="text-white text-uppercase">Saturday - Sunday</h6>
+                    <p>12.00 PM - 8.00 PM</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">Newsletter</h4>
+                <p>Get the latest information from us</p>
+                <div class="w-100">
+                    <div class="input-group">
+                        <input type="text" class="form-control border-light" style="padding: 25px;" placeholder="Your Email">
+                        <div class="input-group-append">
+                            <button class="btn btn-primary font-weight-bold px-3">Sign Up</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid text-center text-white border-top mt-4 py-4 px-sm-3 px-md-5" style="border-color: rgba(256, 256, 256, .1) !important;">
+            <p class="m-0 text-white">Designed by HuiXin</p>
+        </div>
+    </div>
+</body>
+</html>
